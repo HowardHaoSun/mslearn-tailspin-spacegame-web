@@ -9,7 +9,7 @@ namespace TailSpin.SpaceGame.Web
         {
             CreateWebHostBuilder(args).Build().Run();
         }
-//to trigger a commit
+//to trigger a commit. 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
