@@ -19,7 +19,11 @@ namespace TailSpin.SpaceGame.Web
             // Serialize the items from the provided JSON document.
             _items = JsonConvert.DeserializeObject<List<T>>(File.ReadAllText(fileName));
         }
-
+        public LocalDocumentDBRepository(string file, bool used = true)
+        {
+            // Serialize the items from the provided JSON document.
+            _items = JsonConvert.DeserializeObject<List<T>>(file);
+        }
         /// <summary>
         /// Retrieves the item from the store with the given identifier.
         /// </summary>
